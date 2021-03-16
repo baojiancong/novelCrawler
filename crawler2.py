@@ -45,8 +45,9 @@ def getNovelDeatil(bookName,urlAction,novelId):
         bookState = '完结'
     bookIntroduce = bf.find('div',id="intro").find_all('p')[1].text
     
+    # 数据库配置
     db = pymysql.connect(
-        host='xxxxxxxxx',
+        host='xxxxxxxxx',  
         port=3306,
         user='root',
         password='xxxxxxxxx',
