@@ -46,11 +46,11 @@ def getNovelDeatil(bookName,urlAction,novelId):
     bookIntroduce = bf.find('div',id="intro").find_all('p')[1].text
     
     db = pymysql.connect(
-        host='47.102.201.120',
+        host='xxxxxxxxx',
         port=3306,
         user='root',
-        password='bjc19981110',
-        database='wx_novel_copy'
+        password='xxxxxxxxx',
+        database='xxxxxxxxxx'
     )    
     cursor = db.cursor()
 
